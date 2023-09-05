@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="dNk-lk-ggI">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Bored?-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="BoringViewController" customModule="BoringApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Let's Do Something" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oF8-P2-dxI">
+                                <rect key="frame" x="49" y="282" width="295" height="56"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="4dg-Xp-UcX">
+                                <rect key="frame" x="163" y="346" width="67" height="61"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="100" id="Xoz-ZF-4da"/>
+                                    <constraint firstAttribute="height" constant="61" id="aXC-ud-Hio"/>
+                                </constraints>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ggp-h8-ql6">
+                                <rect key="frame" x="146" y="396" width="100" height="61"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="61" id="7tL-Yq-aAA"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="vS4-1b-0en"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Tap It" cornerStyle="capsule">
+                                    <color key="baseBackgroundColor" systemColor="systemPurpleColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="boredBtnAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9Nr-Z6-Jep"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ggp-h8-ql6" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="4XO-Kq-ul9"/>
+                            <constraint firstItem="4dg-Xp-UcX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="163" id="5R0-je-GI8"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="4dg-Xp-UcX" secondAttribute="bottom" constant="411" id="81N-OA-h5y"/>
+                            <constraint firstItem="ggp-h8-ql6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="146" id="DLN-Eo-Kkp"/>
+                            <constraint firstItem="oF8-P2-dxI" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="127" id="Fg3-LM-Mdy"/>
+                            <constraint firstItem="oF8-P2-dxI" firstAttribute="centerX" secondItem="4dg-Xp-UcX" secondAttribute="centerX" id="OgU-nU-d2t"/>
+                            <constraint firstItem="4dg-Xp-UcX" firstAttribute="top" secondItem="oF8-P2-dxI" secondAttribute="bottom" constant="8" symbolic="YES" id="Pwj-IT-x0L"/>
+                            <constraint firstItem="4dg-Xp-UcX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="SSL-xn-abN"/>
+                            <constraint firstItem="oF8-P2-dxI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="49" id="kA6-Sc-feK"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="ggp-h8-ql6" secondAttribute="trailing" symbolic="YES" id="wVV-O4-M32"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Bored?" id="MCh-K8-T6e"/>
+                    <connections>
+                        <outlet property="boredBtn" destination="ggp-h8-ql6" id="RYM-at-oX0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="962.59541984732823" y="3.5211267605633805"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ZIh-u5-fgT">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="dNk-lk-ggI" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="iET-KK-clO">
+                        <rect key="frame" x="0.0" y="59" width="393" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="DUD-Zc-o94"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EXL-cd-oWp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="35.877862595419849" y="3.5211267605633805"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemPurpleColor">
+            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
